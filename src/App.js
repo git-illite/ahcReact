@@ -1,7 +1,13 @@
 import React from "react";
+import Navigationbar from "./Components/Navigationbar";
+import Example from "./Components/Examples";
 
 function App() {
-  return <div className="App">Abu Huraira Center</div>;
+  return (
+    <div>
+      <Example/>
+    </div>
+  );
 }
 
 export default App;
