@@ -8,15 +8,17 @@ const navigation = [
   { name: "Programs", href: "#", current: false },
   { name: "Services", href: "#", current: false },
   { name: "School", href: "#", current: false },
-  { name: "Donate", href: "#", current: false },
   { name: "Ramadan", href: "#", current: false },
+  { name: "Media", href: "#", current: false },
+  { name: "About", href: "#", current: false },
+  { name: "Donate", href: "#", current: false },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function Navbar() {
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
