@@ -40,7 +40,9 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img className="h-10 w-auto" src={Logo} alt="Your Company" />
-                  <span className="text-sky-200 ml-3">Abu Huraira Center</span>
+                  <span className="text-slate-50 ml-3 font-semibold">
+                    Abu Huraira Center
+                  </span>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
