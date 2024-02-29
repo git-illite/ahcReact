@@ -55,7 +55,7 @@ const Schools = () => {
             success.
           </p>
           <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-            <img src={AHCWe} alt="card-image" />
+            <img src={AHCWe} alt="card-image" className="object-cover h-auto w-176 lg:-translate-y-9"/>
           </div>
           <div class="pt-6">
             <button
