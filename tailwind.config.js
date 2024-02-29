@@ -7,7 +7,7 @@ module.exports = {
         bgr: "url('/src/Assets/280-masjid-AHC-dark-1920.png')",
       },
       spacing: {
-        176: "44rem",
+        176: "46rem",
       },
     },
   },
