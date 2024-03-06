@@ -5,7 +5,7 @@ import Iftar from "../Assets/Services/iftar.jpg";
 
 const Services = () => {
   return (
-    <div className="items-center justify-center">
+    <div className="items-center justify-center h-full min-h-screen w-full" id="services">
       <section className="md:h-full flex items-center text-gray-600 py-24">
         <div className="container px-5  mx-auto">
           <div className="text-center mb-12">

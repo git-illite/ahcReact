@@ -7,7 +7,12 @@ import DarImg from "../Assets/Schools/darImg.png";
 
 const Schools = () => {
   return (
-    <div class="h-full min-h-screen w-full bg-gray-800 pt-12 p-4">
+    <div class="h-full min-h-screen w-full bg-gray-800 pt-12 p-4" id="school">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-6xl text-gray-200 font-semibold">
+          Schools
+        </h1>
+      </div>
       <div class="grid gap-14 md:grid-cols-3 md:gap-5">
         <div
           data-aos-delay="300"
@@ -55,7 +60,11 @@ const Schools = () => {
             success.
           </p>
           <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-            <img src={AHCWe} alt="card-image" className="object-cover h-auto w-176 lg:-translate-y-9"/>
+            <img
+              src={AHCWe}
+              alt="card-image"
+              className="object-cover h-auto w-176 lg:-translate-y-9"
+            />
           </div>
           <div class="pt-6">
             <button

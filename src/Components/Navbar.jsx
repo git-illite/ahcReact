@@ -5,13 +5,13 @@ import Logo from "../Assets/logosmall.png";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "Programs", href: "#", current: false },
-  { name: "Services", href: "#", current: false },
-  { name: "School", href: "#", current: false },
-  { name: "Ramadan", href: "#", current: false },
-  { name: "Media", href: "#", current: false },
-  { name: "About", href: "#", current: false },
-  { name: "Donate", href: "#", current: false },
+  { name: "Programs", href: "#programs", current: false },
+  { name: "Services", href: "#services", current: false },
+  { name: "School", href: "#school", current: false },
+  { name: "Ramadan", href: "#ramadan", current: false },
+  { name: "Media", href: "#media", current: false },
+  { name: "About", href: "#about", current: false },
+  { name: "Donate", href: "#donate", current: false },
 ];
 
 function classNames(...classes) {

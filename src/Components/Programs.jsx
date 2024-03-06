@@ -12,9 +12,12 @@ import carouselData from "../carouselData";
 
 export default function Programs() {
   return (
-    <div className="pt-4" id="programs">
+    <div
+      className="h-full min-h-screen w-full pt-4 bg-gray-800 pb-24"
+      id="programs"
+    >
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl text-gray-700 font-semibold">
+        <h1 className="text-4xl md:text-6xl text-white font-semibold">
           Programs
         </h1>
       </div>
@@ -35,12 +38,12 @@ export default function Programs() {
               <ButtonBack
                 role="button"
                 aria-label="slide backward"
-                className="absolute  left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                className="left-[-10px] relative focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
                 id="prev"
               >
                 <svg
-                  width={8}
-                  height={14}
+                  width={10}
+                  height={18}
                   viewBox="0 0 8 14"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +79,7 @@ export default function Programs() {
                             <div className="flex h-full items-end pb-6"></div>
                           </div>
                         </div>
-                        <h3 className="text-lg lg:text-xl font-semibold leading-5 lg:leading-6 text-black">
+                        <h3 className="text-lg lg:text-xl font-semibold leading-5 lg:leading-6 text-white">
                           {item.description}
                         </h3>
                       </Slide>
@@ -87,12 +90,12 @@ export default function Programs() {
               <ButtonNext
                 role="button"
                 aria-label="slide forward"
-                className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+                className="relative z-30 left-3 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
                 id="next"
               >
                 <svg
-                  width={8}
-                  height={14}
+                  width={10}
+                  height={18}
                   viewBox="0 0 8 14"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +127,7 @@ export default function Programs() {
             <ButtonBack
               role="button"
               aria-label="slide backward"
-              className="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+              className="absolute z-30 left-0 ml-1 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
               id="prev"
             >
               <svg

@@ -2,11 +2,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative bg-white p-2 mb-2">
+    <div className="relative bg-white p-2 mb-2 pb-24">
       {/* <!-- Content at the top of the container --> */}
 
       <section className="relative bg-bgr bg-cover bg-center bg-no-repeat mx-auto">
-        <div className="relative inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+        <div className="relative inset-0  sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
         <div className="mx-auto max-w-screen-xl px-4 py-40 sm:px-6 flex justify-center items-center sm:cols-span-2">
           <div className="max-w-2xl text-center ltr:sm:text-left rtl:sm:text-right">
