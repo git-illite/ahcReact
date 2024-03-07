@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ahcReact/static/css/main.58327432.css",
-    "main.js": "/ahcReact/static/js/main.49330b7f.js",
+    "main.js": "/ahcReact/static/js/main.f358659d.js",
     "static/media/Counseling-Office-2-min.jpeg": "/ahcReact/static/media/Counseling-Office-2-min.3d401dae0a7c78424221.jpeg",
     "static/media/280-masjid-AHC-dark-1920.png": "/ahcReact/static/media/280-masjid-AHC-dark-1920.bb5d273f0b4b91d10e50.png",
     "static/media/iftar.jpg": "/ahcReact/static/media/iftar.e16dffc0a24d838ee885.jpg",
@@ -12,10 +12,10 @@
     "static/media/ahcWe.jpeg": "/ahcReact/static/media/ahcWe.3b1f7f44e071480d25ee.jpeg",
     "index.html": "/ahcReact/index.html",
     "main.58327432.css.map": "/ahcReact/static/css/main.58327432.css.map",
-    "main.49330b7f.js.map": "/ahcReact/static/js/main.49330b7f.js.map"
+    "main.f358659d.js.map": "/ahcReact/static/js/main.f358659d.js.map"
   },
   "entrypoints": [
     "static/css/main.58327432.css",
-    "static/js/main.49330b7f.js"
+    "static/js/main.f358659d.js"
   ]
 }
