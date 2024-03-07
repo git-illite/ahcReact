@@ -2,7 +2,7 @@
 const carouselData = [
   {
     id: 0,
-    imageUrl: "../programs/The-Best-of-Examples-663x1024.png",
+    imageUrl: "../src/Assets/Programs/The-Best-of-Examples-663x1024.png",
     alt: "black chair and white table",
     description: "The Best of Examples",
   },
