@@ -8,7 +8,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-import carouselData from "../carouselData";
+import carouselData from "../Assets/carouselData";
 
 export default function Programs() {
   return (

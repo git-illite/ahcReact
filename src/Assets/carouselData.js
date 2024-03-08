@@ -9,7 +9,7 @@ const carouselData = [
   {
     id: 1,
     imageUrl:
-      "../programs/Tuhfat-At-Atfal-Al-Jazariyah.65bc5ec35c3ce1.70866854-663x1024.png",
+      "Tuhfat-At-Atfal-Al-Jazariyah.65bc5ec35c3ce1.70866854-663x1024.png",
     alt: "sitting area",
     description: "Tuhfat Al Atfal & Al Jazariyah",
   },

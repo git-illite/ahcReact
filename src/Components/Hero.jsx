@@ -2,11 +2,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative bg-white p-2 mb-2 pb-24">
+    <div className=" bg-white p-2 mb-2 pb-24 ">
       {/* <!-- Content at the top of the container --> */}
 
-      <section className="relative bg-bgr bg-cover bg-center bg-no-repeat mx-auto">
-        <div className="relative inset-0  sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+      <section className="bg-bgr bg-cover bg-center bg-no-repeat mx-auto">
+        <div className=" inset-0  sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
         <div className="mx-auto max-w-screen-xl px-4 py-40 sm:px-6 flex justify-center items-center sm:cols-span-2">
           <div className="max-w-2xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -26,14 +26,14 @@ const Hero = () => {
 
             <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
               <a
-                href="#"
+                href="https://app.irm.io/abuhuraira.org/b/automate-your-jummah"
                 className="block w-full rounded bg-sky-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-sky-700 focus:outline-none focus:ring active:bg-sky-500 sm:w-auto"
               >
                 Donate
               </a>
 
               <a
-                href="#"
+                href="https://app.irm.io/abuhuraira.org/b/automate-your-jummah"
                 className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-sky-600 shadow hover:text-sky-700 focus:outline-none focus:ring active:text-sky-500 sm:w-auto"
               >
                 Learn More
