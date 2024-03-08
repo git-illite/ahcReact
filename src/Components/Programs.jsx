@@ -13,7 +13,7 @@ import carouselData from "../Assets/carouselData";
 export default function Programs() {
   return (
     <div
-      className="h-full min-h-screen w-full pt-4 bg-gray-800 pb-24"
+      className="h-full min-h-screen w-full pt-24 bg-gray-800 pb-24 "
       id="programs"
     >
       <div className="text-center mb-12">
@@ -70,7 +70,10 @@ export default function Programs() {
                                 hover:scale-95"
                         >
                           <img
-                            src={item.imageUrl}
+                            src={
+                              require(`../Assets/Programs/${item.imageUrl}`)
+                               
+                            }
                             alt={item.alt}
                             className="object-cover object-center w-full"
                           />

@@ -9,7 +9,7 @@ import DarImg from "../Assets/Schools/darImg.png";
 const Schools = () => {
   return (
     <div
-      className="h-full min-h-screen w-full bg-gray-800 pt-12 p-4"
+      className="h-full min-h-screen w-full bg-gray-800 py-24 p-4"
       id="school"
     >
       <div className="text-center mb-12">
@@ -41,12 +41,7 @@ const Schools = () => {
               className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
               type="button"
             >
-              <Link
-                to="https://app.irm.io/abuhuraira.org/b/automate-your-jummah"
-                style={{ color: "inherit", textDecoration: "inherit" }}
-              >
-                Read More
-              </Link>
+              <Link to="https://ahcacademy.com/">Read More</Link>
             </button>
           </div>
         </div>
@@ -77,7 +72,7 @@ const Schools = () => {
               className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
               type="button"
             >
-              Read More
+              <Link to="https://abuhuraira.org/weekendschool/">Read More</Link>
             </button>
           </div>
         </div>
@@ -110,7 +105,7 @@ const Schools = () => {
               className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
               type="button"
             >
-              Read More
+              <Link to="https://darultarteel.com/">Read More</Link>
             </button>
           </div>
         </div>

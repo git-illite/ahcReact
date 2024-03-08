@@ -2,10 +2,14 @@ import React from "react";
 import Banquet from "../Assets/Services/59546695-3f42-4b43-b6e2-aa2c1957f2e4.jpeg";
 import Counsel from "../Assets/Services/Counseling-Office-2-min.jpeg";
 import Iftar from "../Assets/Services/iftar.jpg";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div className="items-center justify-center h-full min-h-screen w-full" id="services">
+    <div
+      className="items-center justify-center h-full min-h-screen w-full"
+      id="services"
+    >
       <section className="md:h-full flex items-center text-gray-600 py-24">
         <div className="container px-5  mx-auto">
           <div className="text-center mb-12">
@@ -34,21 +38,21 @@ const Services = () => {
                     a stylish and accommodating atmosphere for all.
                   </p>
                   <div className="flex items-center flex-wrap ">
-                    <a className="text-sky-300 inline-flex items-center md:mb-2 lg:mb-0">
+                    <Link
+                      to="https://abuhuraira.org/hall-booking/"
+                      className="text-sky-300 inline-flex items-center md:mb-2 lg:mb-0"
+                    >
                       Read More
                       <svg
-                        className="w-4 h-4 ml-2"
+                        className="w-4 h-4 ml-2 stroke-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        stroke-width="2"
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
                       >
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -75,21 +79,21 @@ const Services = () => {
                     your specific needs.
                   </p>
                   <div className="flex items-center flex-wrap ">
-                    <a className="text-sky-300 inline-flex items-center md:mb-2 lg:mb-0">
+                    <Link
+                      to="https://abuhuraira.org/counseling/"
+                      className="text-sky-300 inline-flex items-center md:mb-2 lg:mb-0"
+                    >
                       Read More
                       <svg
                         className="w-4 h-4 ml-2 stroke-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                       
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
                       >
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -114,21 +118,21 @@ const Services = () => {
                     our iftar program, open to all.
                   </p>
                   <div className="flex items-center flex-wrap ">
-                    <a className="text-sky-300 inline-flex items-center md:mb-2 lg:mb-0">
+                    <Link
+                      to="https://abuhuraira.org/iftaar-program/"
+                      className="text-sky-300 inline-flex items-center md:mb-2 lg:mb-0"
+                    >
                       Read More
                       <svg
-                        className="w-4 h-4 ml-2"
+                        className="w-4 h-4 ml-2 stroke-2"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        stroke-width="2"
                         fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
                       >
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
