@@ -1,21 +1,38 @@
 {
   "files": {
-    "main.css": "/ahcReact/static/css/main.58327432.css",
-    "main.js": "/ahcReact/static/js/main.f358659d.js",
+    "main.css": "/ahcReact/static/css/main.388d5302.css",
+    "main.js": "/ahcReact/static/js/main.30a4c2cf.js",
     "static/media/Counseling-Office-2-min.jpeg": "/ahcReact/static/media/Counseling-Office-2-min.3d401dae0a7c78424221.jpeg",
     "static/media/280-masjid-AHC-dark-1920.png": "/ahcReact/static/media/280-masjid-AHC-dark-1920.bb5d273f0b4b91d10e50.png",
+    "static/media/Flyers-1.64f0055b1b5b88.03871422-663x1024.png": "/ahcReact/static/media/Flyers-1.64f0055b1b5b88.03871422-663x1024.eb241278ce39ac9cc391.png",
+    "static/media/The-Best-of-Examples-663x1024.png": "/ahcReact/static/media/The-Best-of-Examples-663x1024.7fcd3268a7da45b35405.png",
+    "static/media/Tuhfat-At-Atfal-Al-Jazariyah.65bc5ec35c3ce1.70866854-663x1024.png": "/ahcReact/static/media/Tuhfat-At-Atfal-Al-Jazariyah.65bc5ec35c3ce1.70866854-663x1024.94eb1539195d029b277c.png",
+    "static/media/Friday-Youth-Night-Program-663x1024.png": "/ahcReact/static/media/Friday-Youth-Night-Program-663x1024.71bd96f15e4ac96262e7.png",
+    "static/media/Darul-Tarteel-202324-Flyer-1-663x1024.png": "/ahcReact/static/media/Darul-Tarteel-202324-Flyer-1-663x1024.ea57426f563122e9703c.png",
     "static/media/iftar.jpg": "/ahcReact/static/media/iftar.e16dffc0a24d838ee885.jpg",
+    "static/media/Foster-Your-Foundations-Module-2-1-663x1024.png": "/ahcReact/static/media/Foster-Your-Foundations-Module-2-1-663x1024.6fe0f213a432f8c902e6.png",
     "static/media/ahcAc.jpg": "/ahcReact/static/media/ahcAc.768bdeff364e0479e556.jpg",
+    "static/media/Flyers-663x1024.png": "/ahcReact/static/media/Flyers-663x1024.8289af1baae3b5e9e824.png",
     "static/media/AHCAcademySMALLLOGO-transformed.png": "/ahcReact/static/media/AHCAcademySMALLLOGO-transformed.78860b579fd49eaecab1.png",
     "static/media/59546695-3f42-4b43-b6e2-aa2c1957f2e4.jpeg": "/ahcReact/static/media/59546695-3f42-4b43-b6e2-aa2c1957f2e4.53d67ade8da87e8ddc5e.jpeg",
+    "static/media/Iqra-2023-663x1024.png": "/ahcReact/static/media/Iqra-2023-663x1024.00d50072c26c1a7bba80.png",
+    "static/media/Weekend-School-2023-24-663x1024.png": "/ahcReact/static/media/Weekend-School-2023-24-663x1024.6e673f34fbdc52e6da89.png",
     "static/media/darImg.png": "/ahcReact/static/media/darImg.9986e28e2286b1660df4.png",
+    "static/media/WhatsApp-Image-2023-08-30-at-7.08.30-PM.jpeg": "/ahcReact/static/media/WhatsApp-Image-2023-08-30-at-7.08.30-PM.ee9e02d0c46e7da18f32.jpeg",
+    "static/media/WhatsApp-Image-2024-01-31-at-05.30.06.jpg": "/ahcReact/static/media/WhatsApp-Image-2024-01-31-at-05.30.06.5f2001b33e009dedf828.jpg",
+    "static/media/WhatsApp-Image-2024-01-25-at-01.19.39.jpeg": "/ahcReact/static/media/WhatsApp-Image-2024-01-25-at-01.19.39.363d0efb3a0155749440.jpeg",
+    "static/media/WhatsApp-Image-2024-01-31-at-05.30.06-1024x1024.jpeg": "/ahcReact/static/media/WhatsApp-Image-2024-01-31-at-05.30.06-1024x1024.81055f2cca1dc966995c.jpeg",
     "static/media/ahcWe.jpeg": "/ahcReact/static/media/ahcWe.3b1f7f44e071480d25ee.jpeg",
+    "static/media/WhatsApp-Image-2023-09-21-at-7.24.43-AM-662x1024.jpeg": "/ahcReact/static/media/WhatsApp-Image-2023-09-21-at-7.24.43-AM-662x1024.792250c27a386ea58237.jpeg",
+    "static/media/WhatsApp-Image-2023-09-11-at-4.37.23-PM-661x1024.jpeg": "/ahcReact/static/media/WhatsApp-Image-2023-09-11-at-4.37.23-PM-661x1024.4496f4b6ad555d3363f7.jpeg",
+    "static/media/WhatsApp-Image-2024-01-25-at-01.19.39-1-819x1024.jpeg": "/ahcReact/static/media/WhatsApp-Image-2024-01-25-at-01.19.39-1-819x1024.006a59bed7d7f293636d.jpeg",
+    "static/media/WhatsApp-Image-2024-01-25-at-01.19.39-724x1024.jpeg": "/ahcReact/static/media/WhatsApp-Image-2024-01-25-at-01.19.39-724x1024.6d0f92e38997909c314e.jpeg",
     "index.html": "/ahcReact/index.html",
-    "main.58327432.css.map": "/ahcReact/static/css/main.58327432.css.map",
-    "main.f358659d.js.map": "/ahcReact/static/js/main.f358659d.js.map"
+    "main.388d5302.css.map": "/ahcReact/static/css/main.388d5302.css.map",
+    "main.30a4c2cf.js.map": "/ahcReact/static/js/main.30a4c2cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.58327432.css",
-    "static/js/main.f358659d.js"
+    "static/css/main.388d5302.css",
+    "static/js/main.30a4c2cf.js"
   ]
 }
