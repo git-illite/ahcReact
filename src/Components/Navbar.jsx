@@ -1,26 +1,62 @@
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo from "../Assets/logosmall.png";
-
-const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Programs", href: "#programs", current: false },
-  { name: "Services", href: "#services", current: false },
-  { name: "School", href: "#school", current: false },
-  { name: "Ramadan", href: "#ramadan", current: false },
-  { name: "Media", href: "#media", current: false },
-  { name: "About", href: "#about", current: false },
-  { name: "Donate", href: "#donate", current: false },
-];
+import { Link } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Navbar() {
+  const [currentPath, setCurrentPath] = useState(window.location.hash);
+  const [currentSection, setCurrentSection] = useState("");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            console.log(entry.target, " entry id");
+            setCurrentSection(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "0px", threshold: 0.6 }
+    );
+
+    // Attaching the observer to each section
+    document.querySelectorAll("h1").forEach((article) => {
+      observer.observe(article);
+    });
+
+    return () => observer.disconnect(); // Cleanup observer on component unmount
+  }, []);
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      setCurrentPath(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
+  const navigation = [
+    { name: "Home", href: "#", current: false },
+    { name: "Programs", href: "#programs", current: false },
+    { name: "Services", href: "#services", current: false },
+    { name: "School", href: "#school", current: false },
+    { name: "Ramadan", href: "#ramadan", current: false },
+    { name: "Media", href: "#media", current: false },
+    { name: "About", href: "#about", current: false },
+    { name: "Donate", href: "#donate", current: false },
+  ];
   return (
-    <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-50">
+    <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-50" id="Home">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -41,7 +77,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img className="h-10 w-auto" src={Logo} alt="Your Company" />
                   <span className="text-slate-50 ml-3 font-semibold">
-                    Abu Huraira Center
+                    <a href="/"> Abu Huraira Center</a>
                   </span>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
@@ -50,13 +86,15 @@ export default function Navbar() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className={classNames(
-                          item.current
+                        className={`${
+                          item.href === currentPath ||
+                          item.name.toLowerCase() === currentSection
                             ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                        } rounded-md px-3 py-2 text-sm font-medium`}
+                        aria-current={
+                          item.href === currentPath ? "page" : undefined
+                        }
                       >
                         {item.name}
                       </a>
@@ -143,7 +181,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="sm:hidden" id="home">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button

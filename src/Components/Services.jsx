@@ -7,13 +7,16 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <div
-      className="items-center justify-center h-full min-h-screen w-full"
+      className="items-center justify-center h-full min-h-screen w-full bg-gradient-to-b from-sky-200 via-sky-100 to-slate-100"
       id="services"
     >
       <section className="md:h-full flex items-center text-gray-600 py-24">
         <div className="container px-5  mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl text-gray-700 font-semibold">
+            <h1
+              className="text-4xl md:text-6xl text-gray-700 font-semibold"
+              id="services"
+            >
               Services
             </h1>
           </div>

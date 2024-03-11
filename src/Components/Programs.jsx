@@ -12,12 +12,15 @@ import carouselData from "../Assets/carouselData";
 
 export default function Programs() {
   return (
-    <div
-      className="h-full min-h-screen w-full pt-24 bg-gray-800 pb-24 "
+    <article
+      className="h-full min-h-screen w-full pt-24 pb-24 bg-gradient-to-b from-slate-50 via-sky-200 to-sky-200"
       id="programs"
     >
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-6xl text-white font-semibold">
+        <h1
+          className="text-4xl md:text-6xl text-gray-900 font-semibold"
+          id="programs"
+        >
           Programs
         </h1>
       </div>
@@ -70,10 +73,7 @@ export default function Programs() {
                                 hover:scale-95"
                         >
                           <img
-                            src={
-                              require(`../Assets/Programs/${item.imageUrl}`)
-                               
-                            }
+                            src={require(`../Assets/Programs/${item.imageUrl}`)}
                             alt={item.alt}
                             className="object-cover object-center w-full"
                           />
@@ -162,7 +162,7 @@ export default function Programs() {
                                 hover:scale-95"
                       >
                         <img
-                          src={item.imageUrl}
+                          src={require(`../Assets/Programs/${item.imageUrl}`)}
                           alt={item.alt}
                           className="object-cover object-center w-full"
                         />
@@ -245,7 +245,7 @@ export default function Programs() {
                                 hover:scale-95"
                     >
                       <img
-                        src={item.imageUrl}
+                        src={require(`../Assets/Programs/${item.imageUrl}`)}
                         alt={item.alt}
                         className="object-cover object-center w-full"
                       />
@@ -282,6 +282,6 @@ export default function Programs() {
           </div>
         </CarouselProvider>
       </div>
-    </div>
+    </article>
   );
 }

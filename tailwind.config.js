@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        bgr: "url('/src/Assets/280-masjid-AHC-dark-1920.png')",
+        bgr: "url('/src/Assets/280-masjid-AHC-dark-2.png')",
       },
       spacing: {
         176: "46rem",
