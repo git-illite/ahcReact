@@ -32,7 +32,7 @@ const Hero = () => {
   // }, []);
 
   return (
-    <div className="p-2 mb-2 pb-24 bg-gradient-to-b from-gray-800 via-sky-600 to-slate-50">
+    <div className="p-2 mb-2 pb-24 bg-gradient-to-b from-gray-800 via-sky-500 to-slate-50">
       {/* <!-- Content at the top of the container --> */}
 
       <section className="bg-bgr bg-cover bg-center bg-no-repeat mx-auto w-full h-full">
@@ -40,7 +40,10 @@ const Hero = () => {
 
         <div className="mx-auto max-w-screen-xl px-4 py-40 sm:px-6 flex justify-center items-center sm:cols-span-2">
           <div className="max-w-2xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-extrabold sm:text-5xl text-white" id="home">
+            <h1
+              className="text-3xl font-extrabold sm:text-5xl text-white"
+              id="home"
+            >
               Automate your donation
               <strong className="block font-extrabold text-sky-700 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                 {" "}

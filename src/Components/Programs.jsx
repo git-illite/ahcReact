@@ -14,7 +14,7 @@ import carouselData from "../Assets/carouselData";
 export default function Programs() {
   return (
     <article
-      className="h-full min-h-screen w-full pt-24 pb-24 bg-gradient-to-b from-slate-50 via-sky-200 to-sky-200"
+      className="h-full min-h-screen w-full pt-24 pb-24 bg-gradient-to-b from-slate-50 via-sky-100 to-sky-50"
       id="programs"
     >
       <div className="text-center mb-12">
@@ -33,7 +33,7 @@ export default function Programs() {
             naturalSlideWidth={1920}
             naturalSlideHeight={1080}
             isIntrinsicHeight={true}
-            totalSlides={15}
+            totalSlides={16}
             visibleSlides={4}
             step={1}
             infinite={true}
@@ -67,7 +67,7 @@ export default function Programs() {
                     id="slider"
                     className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                   >
-                    {carouselData.map((item, index) => (
+                    {carouselData.reverse().map((item, index) => (
                       <Slide index={index} key={item.id}>
                         <div
                           className="flex flex-shrink-0 relative w-full sm:w-auto transform transition duration-500 
@@ -84,12 +84,12 @@ export default function Programs() {
                           </div>
                         </div>
                         <h3 className="text-lg lg:text-xl font-semibold leading-5 lg:leading-6 text-gray-800 text-center">
-                          {item.description} <br/>{" "}
+                          {item.description} <br />{" "}
                           <button
                             type="button"
-                            className="px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                            className="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                           >
-                            Register
+                            Read More
                           </button>
                         </h3>
                       </Slide>
