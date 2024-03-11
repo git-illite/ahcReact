@@ -25,7 +25,10 @@ const Schools = () => {
           <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-cyan-400 shadow-cyan-500/40 ">
             <img src={AHCAcademy} className="" alt="" />
           </div>
-          <h1 className="text-darken text-xl font-medium lg:px-14 -translate-y-10">
+          <h1
+            className="text-darken text-xl font-medium lg:px-14 -translate-y-10"
+            id="school"
+          >
             AHC ACADEMY
           </h1>
           <p className="px-8 text-gray-500 -translate-y-8">
@@ -52,7 +55,10 @@ const Schools = () => {
           <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-teal-400 shadow-lg shadow-teal-500/40">
             <img src={AHCAcademy} className="object-cover h-16 " alt="" />
           </div>
-          <h1 className="text-darken mb-3 text-xl font-medium lg:px-14 -translate-y-10">
+          <h1
+            className="text-darken mb-3 text-xl font-medium lg:px-14 -translate-y-10"
+            id="school"
+          >
             WEEKEND SCHOOL
           </h1>
           <p className="px-4 text-gray-500 -translate-y-11 mb-3">
@@ -86,7 +92,10 @@ const Schools = () => {
           <div className="mx-auto flex h-16 w-16 -translate-y-14 transform items-center justify-center rounded-full shadow-lg bg-blue-50 shadow-blue-500/40">
             <img src={DTPNG} className="object-cover h-28 " alt="" />
           </div>
-          <h1 className="text-darken mb-3 text-xl font-medium lg:px-14 -translate-y-9">
+          <h1
+            className="text-darken mb-3 text-xl font-medium lg:px-14 -translate-y-9"
+            id="school"
+          >
             DARUL TARTEEL
           </h1>
           <p className="px-4 text-gray-500 -translate-y-11 mb-3">

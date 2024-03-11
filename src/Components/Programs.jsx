@@ -7,6 +7,7 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import { Link } from "react-router-dom";
 
 import carouselData from "../Assets/carouselData";
 
@@ -82,8 +83,14 @@ export default function Programs() {
                             <div className="flex h-full items-end pb-6"></div>
                           </div>
                         </div>
-                        <h3 className="text-lg lg:text-xl font-semibold leading-5 lg:leading-6 text-white">
-                          {item.description}
+                        <h3 className="text-lg lg:text-xl font-semibold leading-5 lg:leading-6 text-gray-800 text-center">
+                          {item.description} <br/>{" "}
+                          <button
+                            type="button"
+                            className="px-3 py-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                          >
+                            Register
+                          </button>
                         </h3>
                       </Slide>
                     ))}

@@ -32,7 +32,9 @@ const Services = () => {
                   <h2 className="text-base font-medium text-sky-300 mb-1">
                     280 Yorkland Blvd
                   </h2>
-                  <h1 className="text-2xl font-semibold mb-3">Banquet Hall</h1>
+                  <h1 className="text-2xl font-semibold mb-3" id="services">
+                    Banquet Hall
+                  </h1>
                   <p className="leading-relaxed mb-3">
                     Our banquet hall provides a versatile space for weddings and
                     events, featuring modern amenities and flexible seating
@@ -71,7 +73,7 @@ const Services = () => {
                   <h2 className="text-base font-medium text-sky-300 mb-1">
                     270 Yorkland Blvd
                   </h2>
-                  <h1 className="text-2xl font-semibold mb-3">
+                  <h1 className="text-2xl font-semibold mb-3" id="services">
                     Coaching and Counseling
                   </h1>
                   <p className="leading-relaxed mb-3">
@@ -112,7 +114,9 @@ const Services = () => {
                   <h2 className="text-base font-medium text-sky-300 mb-1">
                     270-280 Yorkland Blvd
                   </h2>
-                  <h1 className="text-2xl font-semibold mb-3">Iftar Program</h1>
+                  <h1 className="text-2xl font-semibold mb-3" id="services">
+                    Iftar Program
+                  </h1>
                   <p className="leading-relaxed mb-3">
                     Join us for our daily iftar gatherings during Ramadan, where
                     we offer delicious dates, fruits, and hearty meals to break
