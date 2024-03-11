@@ -67,7 +67,7 @@ export default function Programs() {
                     id="slider"
                     className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                   >
-                    {carouselData.reverse().map((item, index) => (
+                    {[...carouselData].reverse().map((item, index) => (
                       <Slide index={index} key={item.id}>
                         <div
                           className="flex flex-shrink-0 relative w-full sm:w-auto transform transition duration-500 
