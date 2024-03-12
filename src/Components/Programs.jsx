@@ -10,14 +10,15 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 import { Link } from "react-router-dom";
 
 import carouselData from "../Assets/carouselData";
+let reversedData = [...carouselData].reverse();
 
 export default function Programs() {
   return (
-    <article
-      className="h-full min-h-screen w-full pt-24 pb-24 bg-gradient-to-b from-slate-50 via-sky-100 to-sky-50"
+    <div
+      className="h-full min-h-screen w-full pt-16 pb-24 bg-gradient-to-b from-slate-50 via-sky-100 to-sky-50"
       id="programs"
     >
-      <div className="text-center mb-12">
+      <div className="text-center mb-2">
         <h1
           className="text-4xl md:text-6xl text-gray-900 font-semibold"
           id="programs"
@@ -67,7 +68,7 @@ export default function Programs() {
                     id="slider"
                     className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                   >
-                    {[...carouselData].reverse().map((item, index) => (
+                    {[...reversedData].toReversed().map((item, index) => (
                       <Slide index={index} key={item.id}>
                         <div
                           className="flex flex-shrink-0 relative w-full sm:w-auto transform transition duration-500 
@@ -83,8 +84,8 @@ export default function Programs() {
                             <div className="flex h-full items-end pb-6"></div>
                           </div>
                         </div>
-                        <h3 className="text-lg lg:text-xl font-semibold leading-5 lg:leading-6 text-gray-800 text-center">
-                          {item.description} <br />{" "}
+                        <h3 className="text-lg lg:text-xl font-semibold leading-5 lg:leading-6 text-gray-800 text-center mb-4">
+                          {item.description} <br /> <br />{" "}
                           <button
                             type="button"
                             className="px-3 py-2 text-xs font-medium text-center text-white bg-sky-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -289,6 +290,6 @@ export default function Programs() {
           </div>
         </CarouselProvider>
       </div>
-    </article>
+    </div>
   );
 }
