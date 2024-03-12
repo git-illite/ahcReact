@@ -26,8 +26,8 @@ export default function Navbar() {
     );
 
     // Attaching the observer to each section
-    document.querySelectorAll("h1").forEach((article) => {
-      observer.observe(article);
+    document.querySelectorAll("h1").forEach((e) => {
+      observer.observe(e);
     });
 
     return () => observer.disconnect(); // Cleanup observer on component unmount
@@ -190,7 +190,7 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
+                      ? "bg-green-900 text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}

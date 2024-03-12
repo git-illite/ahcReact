@@ -129,8 +129,8 @@ export default function Programs() {
           className="lg:hidden md:block hidden"
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
-          totalSlides={12}
-          visibleSlides={2}
+          totalSlides={16}
+          visibleSlides={3}
           step={1}
           infinite={true}
         >
@@ -216,7 +216,7 @@ export default function Programs() {
           className="block md:hidden"
           naturalSlideWidth={100}
           isIntrinsicHeight={true}
-          totalSlides={15}
+          totalSlides={16}
           visibleSlides={1}
           step={1}
           infinite={true}
