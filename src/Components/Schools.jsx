@@ -9,7 +9,7 @@ import DarImg from "../Assets/Schools/darImg.png";
 const Schools = () => {
   return (
     <div
-      className="h-full min-h-screen w-full  py-24 p-4 bg-gradient-to-b from-slate-50 via-sky-100 to-sky-200"
+      className="h-full min-h-screen w-full  py-24 p-4 bg-slate-100 [background:radial-gradient(115%_115%_at_50%_10%,#F1F5F9_40%,#63e_100%)]"
       id="school"
     >
       <div className="text-center mb-12">
@@ -21,7 +21,7 @@ const Schools = () => {
         </h1>
       </div>
       <div className="grid gap-14 md:grid-cols-3 md:gap-5">
-        <div className="rounded-xl bg-white p-6 text-center shadow-xl">
+        <div className="rounded-xl bg-slate-100 p-6 text-center shadow-xl">
           <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-cyan-400 shadow-cyan-500/40 ">
             <img src={AHCAcademy} className="" alt="" />
           </div>
@@ -31,7 +31,7 @@ const Schools = () => {
           >
             AHC ACADEMY
           </h1>
-          <p className="px-8 text-gray-500 -translate-y-8">
+          <p className="px-8 text-gray-600 -translate-y-8">
             The Abu Huraira Center Academy is committed to providing our pupils
             with a rich Islamic curriculum based on the Holy Qur’an, and
             authentic Sunnah. Moreover, we aim to provide a well-rounded
@@ -39,8 +39,11 @@ const Schools = () => {
             elementary curriculum. This will provide our students with a
             holistic, well-rounded education.
           </p>
-          <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-            <img src={AHCAcPic} alt="card-image" />
+          <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
+            <Link to="https://ahcacademy.com/">
+              {" "}
+              <img src={AHCAcPic} />
+            </Link>
           </div>
           <div className="pt-6">
             <button
@@ -51,7 +54,7 @@ const Schools = () => {
             </button>
           </div>
         </div>
-        <div className="rounded-xl bg-white p-6 text-center shadow-xl">
+        <div className="rounded-xl bg-slate-100 p-6 text-center shadow-xl">
           <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-teal-400 shadow-lg shadow-teal-500/40">
             <img src={AHCAcademy} className="object-cover h-16 " alt="" />
           </div>
@@ -69,7 +72,7 @@ const Schools = () => {
             students receive a holistic education that prepares them for
             success.
           </p>
-          <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+          <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 ">
             <img
               src={AHCWe}
               alt="card-image"
@@ -87,9 +90,9 @@ const Schools = () => {
         </div>
         <div
           data-aos-delay="150"
-          className="rounded-xl bg-white p-6 text-center shadow-xl"
+          className="rounded-xl bg-slate-100 p-6 text-center shadow-xl"
         >
-          <div className="mx-auto flex h-16 w-16 -translate-y-14 transform items-center justify-center rounded-full shadow-lg bg-blue-50 shadow-blue-500/40">
+          <div className="mx-auto flex h-16 w-16 -translate-y-14 transform items-center justify-center rounded-full shadow-lg bg-blue-50 shadow-blue-500/40 ">
             <img src={DTPNG} className="object-cover h-28 " alt="" />
           </div>
           <h1

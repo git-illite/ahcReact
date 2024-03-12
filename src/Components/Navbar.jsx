@@ -17,8 +17,8 @@ export default function Navbar() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log(entry.target, " entry id");
             setCurrentSection(entry.target.id);
+            console.log(currentSection !== currentPath);
           }
         });
       },
@@ -36,6 +36,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleHashChange = () => {
       setCurrentPath(window.location.hash);
+      console.log(currentPath, " current path");
     };
 
     window.addEventListener("hashchange", handleHashChange);
@@ -46,14 +47,14 @@ export default function Navbar() {
   }, []);
 
   const navigation = [
-    { name: "Home", href: "#", current: false },
-    { name: "Programs", href: "#programs", current: false },
-    { name: "Services", href: "#services", current: false },
-    { name: "School", href: "#school", current: false },
-    { name: "Ramadan", href: "#ramadan", current: false },
-    { name: "Media", href: "#media", current: false },
-    { name: "About", href: "#about", current: false },
-    { name: "Donate", href: "#donate", current: false },
+    { name: "Home", href: "#" },
+    { name: "Programs", href: "#programs" },
+    { name: "Services", href: "#services" },
+    { name: "School", href: "#school" },
+    { name: "Ramadan", href: "#ramadan" },
+    { name: "Media", href: "#media" },
+    { name: "About", href: "#about" },
+    { name: "Donate", href: "#donate" },
   ];
   return (
     <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-50" id="Home">
@@ -87,7 +88,6 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         className={`${
-                          item.href === currentPath ||
                           item.name.toLowerCase() === currentSection
                             ? "bg-gray-900 text-white"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white"
