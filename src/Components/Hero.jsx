@@ -32,7 +32,7 @@ const Hero = () => {
   // }, []);
 
   return (
-    <div className="p-2 pb-24 bg-gradient-to-b from-gray-800 via-sky-800 to-sky-600">
+    <div className="p-2 pb-24 bg-gradient-to-b from-gray-800 via-sky-800 to-sky-700">
       {/* <!-- Content at the top of the container --> */}
 
       <section className="bg-bgr bg-cover bg-center bg-no-repeat mx-auto w-full h-full">

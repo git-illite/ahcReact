@@ -9,7 +9,7 @@ import DarImg from "../Assets/Schools/darImg.png";
 const Schools = () => {
   return (
     <div
-      className="h-full min-h-screen w-full  py-24 p-4 bg-slate-100 [background:radial-gradient(115%_115%_at_50%_10%,#F1F5F9_40%,#63e_100%)]"
+      className="h-full min-h-screen w-full  py-24 p-4 [background:radial-gradient(125%_125%_at_50%_5%,#F0F9FF_40%,#0369A1_80%)]"
       id="school"
     >
       <div className="text-center mb-12">
@@ -38,21 +38,21 @@ const Schools = () => {
             academic experience using the standards provided by the Ontario
             elementary curriculum. This will provide our students with a
             holistic, well-rounded education.
-          </p>
-          <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
-            <Link to="https://ahcacademy.com/">
+          </p>{" "}
+          <Link to="https://ahcacademy.com/">
+            <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
               {" "}
-              <img src={AHCAcPic} />
-            </Link>
-          </div>
-          <div className="pt-6">
-            <button
-              className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-              type="button"
-            >
-              <Link to="https://ahcacademy.com/">Read More</Link>
-            </button>
-          </div>
+              <img src={AHCAcPic} alt="academy" />
+            </div>
+            <div className="pt-6">
+              <button
+                className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-sky-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                type="button"
+              >
+                Read More
+              </button>
+            </div>
+          </Link>
         </div>
         <div className="rounded-xl bg-slate-100 p-6 text-center shadow-xl">
           <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-teal-400 shadow-lg shadow-teal-500/40">
@@ -71,22 +71,24 @@ const Schools = () => {
             Our goal is to deliver a balanced academic experience, ensuring
             students receive a holistic education that prepares them for
             success.
-          </p>
-          <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 ">
-            <img
-              src={AHCWe}
-              alt="card-image"
-              className="object-cover h-auto w-176 lg:-translate-y-9"
-            />
-          </div>
-          <div className="pt-6">
-            <button
-              className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-              type="button"
-            >
-              <Link to="https://abuhuraira.org/weekendschool/">Read More</Link>
-            </button>
-          </div>
+          </p>{" "}
+          <Link to="https://abuhuraira.org/weekendschool/">
+            <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
+              <img
+                src={AHCWe}
+                alt="weekend"
+                className="object-cover h-auto w-176 lg:-translate-y-9"
+              />
+            </div>
+            <div className="pt-6">
+              <button
+                className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-sky-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                type="button"
+              >
+                Read More
+              </button>
+            </div>
+          </Link>
         </div>
         <div
           data-aos-delay="150"
@@ -107,22 +109,24 @@ const Schools = () => {
             and the teachers work really hard with the students to develop
             professional recitation quality and help them achieve one of the
             greatest achievements in Islam, memorize the entire Quran.
-          </p>
-          <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 ">
-            <img
-              src={DarImg}
-              alt="card-image"
-              className="object-cover h-auto w-176 lg:-translate-y-9"
-            />
-          </div>
-          <div className="pt-6">
-            <button
-              className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
-              type="button"
-            >
-              <Link to="https://darultarteel.com/">Read More</Link>
-            </button>
-          </div>
+          </p>{" "}
+          <Link to="https://darultarteel.com/">
+            <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
+              <img
+                src={DarImg}
+                alt="tarteel"
+                className="object-cover h-auto w-176 lg:-translate-y-9"
+              />
+            </div>
+            <div className="pt-6">
+              <button
+                className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-sky-800 text-white shadow-md shadow-gray-800/10 hover:shadow-lg hover:shadow-gray-800/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                type="button"
+              >
+                Read More
+              </button>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

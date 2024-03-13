@@ -15,7 +15,7 @@ let reversedData = [...carouselData].reverse();
 export default function Programs() {
   return (
     <div
-      className="h-full min-h-screen w-full pt-16 pb-24 bg-gradient-to-b from-sky-600 via-sky-300 to-sky-100"
+      className="h-full min-h-screen w-full pt-16 pb-24 bg-gradient-to-b from-sky-700 via-sky-600 to-sky-100"
       id="programs"
     >
       <div className="text-center mb-2">
@@ -27,7 +27,7 @@ export default function Programs() {
         </h1>
       </div>
       <div className="container mx-auto md:mb-4">
-        <div className="flex items-center justify-center w-full h-full py-4 sm:py-8 px-4 ">
+        <div className="flex items-center justify-center w-full h-full py-2 sm:py-2 px-4 ">
           {/* Carousel for desktop and large size devices */}
           <CarouselProvider
             className="lg:block hidden"
@@ -127,10 +127,11 @@ export default function Programs() {
         {/* Carousel for tablet and medium size devices */}
         <CarouselProvider
           className="lg:hidden md:block hidden"
-          naturalSlideWidth={100}
+          naturalSlideWidth={1920}
+          naturalSlideHeight={1080}
           isIntrinsicHeight={true}
           totalSlides={16}
-          visibleSlides={3}
+          visibleSlides={2}
           step={1}
           infinite={true}
         >
@@ -163,7 +164,7 @@ export default function Programs() {
                   id="slider"
                   className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                 >
-                  {carouselData.map((item, index) => (
+                  {[...reversedData].toReversed().map((item, index) => (
                     <Slide index={index} key={item.id}>
                       <div
                         className="flex flex-shrink-0 relative w-full sm:w-auto transform transition duration-500 
@@ -246,7 +247,7 @@ export default function Programs() {
             </ButtonBack>
             <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
               <Slider>
-                {carouselData.map((item, index) => (
+                {[...reversedData].toReversed().map((item, index) => (
                   <Slide index={index} key={item.id}>
                     <div
                       className="flex flex-shrink-0 relative w-full sm:w-auto transform transition duration-500 
