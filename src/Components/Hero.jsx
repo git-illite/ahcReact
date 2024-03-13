@@ -38,7 +38,7 @@ const Hero = () => {
       <section className="bg-bgr bg-cover bg-center bg-no-repeat mx-auto w-full h-full">
         <div className=" inset-0  sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
-        <div className="mx-auto max-w-screen-xl px-4 py-40 sm:px-6 flex justify-center items-center sm:cols-span-2">
+        <div className="mx-auto max-w-screen-xl px-4 md:py-40 py-20 sm:px-6 flex justify-center items-center sm:cols-span-2">
           <div className="max-w-2xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h1
               className="text-3xl font-extrabold sm:text-5xl text-white"
@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-wrap justify-start mb-8 px--2 ">
+        <div className="w-full flex flex-wrap justify-evenly  mb-8 px--2 ">
           {/* Cards container */}
           <div className="md:w-full lg:flex md:justify-center md:gap-8 grid grid-cols-3 md:grid-cols-2 md:grid sm:gap-3 lg:translate-y-12">
             {/* Individual card */}

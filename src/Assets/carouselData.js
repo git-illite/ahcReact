@@ -4,7 +4,7 @@ const carouselData = [
     id: 15,
     imageUrl: "ramadan-timings.png",
     alt: "black chair and white table",
-    description: "Ramadan Prayer Timings",
+    description: "Ramadan Prayer Timings",   
   },
   {
     id: 14,
