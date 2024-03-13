@@ -18,7 +18,7 @@ export default function Navbar() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setCurrentSection(entry.target.id);
-            console.log(currentSection !== currentPath);
+            //console.log(currentSection !== currentPath);
           }
         });
       },
@@ -36,7 +36,7 @@ export default function Navbar() {
   useEffect(() => {
     const handleHashChange = () => {
       setCurrentPath(window.location.hash);
-      console.log(currentPath, " current path");
+      //console.log(currentPath, " current path");
     };
 
     window.addEventListener("hashchange", handleHashChange);
