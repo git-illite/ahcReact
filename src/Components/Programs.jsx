@@ -15,7 +15,7 @@ let reversedData = [...carouselData].reverse();
 export default function Programs() {
   return (
     <div
-      className="h-full min-h-screen w-full md:pt-16 md:pb-24 bg-gradient-to-b from-sky-700 via-sky-600 to-sky-300"
+      className="h-full pb-4  w-full md:pt-16 md:pb-12 bg-gradient-to-b from-sky-700 via-sky-600 to-sky-300"
       id="programs"
     >
       <div className="text-center mb-2">
@@ -79,10 +79,6 @@ export default function Programs() {
                             alt={item.alt}
                             className="object-cover object-center w-full"
                           />
-
-                          <div className=" absolute w-full h-full p-6">
-                            <div className="flex h-full items-end pb-6"></div>
-                          </div>
                         </div>
                         <h3 className="text-lg lg:text-xl font-semibold leading-5 lg:leading-6 text-slate-800 text-center mb-4">
                           {item.description} <br /> <br />{" "}

@@ -49,7 +49,7 @@ const Services = () => {
       className="items-center justify-center h-full min-h-screen w-full bg-gradient-to-b from-sky-100 via-sky-50 to-sky-50"
       id="services"
     >
-      <section className="md:h-full flex items-center text-gray-600 py-24">
+      <section className="md:h-full flex items-center text-gray-600 py-4">
         <div className="container px-5  mx-auto">
           <div className="text-center mb-12">
             <h1
