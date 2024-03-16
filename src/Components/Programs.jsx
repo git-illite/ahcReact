@@ -241,7 +241,7 @@ export default function Programs() {
                 />
               </svg>
             </ButtonBack>
-            <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+            <div className="mx-auto overflow-x-hidden overflow-y-hidden w-2/3">
               <Slider>
                 {[...reversedData].toReversed().map((item, index) => (
                   <Slide index={index} key={item.id}>
