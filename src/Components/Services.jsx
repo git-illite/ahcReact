@@ -54,7 +54,7 @@ const Services = () => {
   };
   return (
     <div
-      className="items-center justify-center h-full min-h-screen w-full bg-gradient-to-b from-sky-50 via-sky-100 to-slate-50"
+      className="items-center justify-center h-full  w-full bg-gradient-to-b from-sky-50 via-sky-100 to-slate-50"
       id="services"
     >
       <section className="md:h-full flex items-center text-gray-600 py-12">
