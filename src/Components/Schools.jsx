@@ -21,17 +21,17 @@ const Schools = () => {
         </h1>
       </div>
       <div className="grid gap-14 md:grid-cols-3 md:gap-5">
-        <div className="rounded-xl bg-slate-100 p-6 text-center shadow-xl">
+        <div className="rounded-xl bg-slate-100 p-6  shadow-xl text-center">
           <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full shadow-lg bg-cyan-400 shadow-cyan-500/40 ">
             <img src={AHCAcademy} className="" alt="" />
           </div>
           <h1
-            className="text-darken text-xl font-medium lg:px-14 -translate-y-10"
+            className="text-darken text-xl font-medium lg:px-14 -translate-y-10 "
             id="school"
           >
             AHC ACADEMY
           </h1>
-          <p className="px-8 text-gray-600 -translate-y-8">
+          <p className="px-8 text-gray-700 -translate-y-8">
             The Abu Huraira Center Academy is committed to providing our pupils
             with a rich Islamic curriculum based on the Holy Qur’an, and
             authentic Sunnah. Moreover, we aim to provide a well-rounded
@@ -40,7 +40,7 @@ const Schools = () => {
             holistic, well-rounded education.
           </p>{" "}
           <Link to="https://ahcacademy.com/">
-            <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
+            <div className="relative md:h-56 lg:h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
               {" "}
               <img src={AHCAcPic} alt="academy" />
             </div>
@@ -64,7 +64,7 @@ const Schools = () => {
           >
             WEEKEND SCHOOL
           </h1>
-          <p className="px-4 text-gray-500 -translate-y-11 mb-3">
+          <p className="px-4 text-gray-700 -translate-y-11 mb-3">
             Masjid Abu Huraira's weekend school offers a comprehensive Islamic
             education, rooted in the teachings of the Qur'an and authentic
             Sunnah, complemented by Ontario's elementary curriculum standards.
@@ -73,7 +73,7 @@ const Schools = () => {
             success.
           </p>{" "}
           <Link to="https://abuhuraira.org/weekendschool/">
-            <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
+            <div className="relative md:h-56 lg:h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
               <img
                 src={AHCWe}
                 alt="weekend"
@@ -103,7 +103,7 @@ const Schools = () => {
           >
             DARUL TARTEEL
           </h1>
-          <p className="px-4 text-gray-500 -translate-y-11 mb-3">
+          <p className="px-4 text-gray-700 -translate-y-11 mb-3">
             This program is catered towards full time learning of the recitation
             and memorization of the Quran using prophetic methods. The school
             and the teachers work really hard with the students to develop
@@ -111,7 +111,7 @@ const Schools = () => {
             greatest achievements in Islam, memorize the entire Quran.
           </p>{" "}
           <Link to="https://darultarteel.com/">
-            <div className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
+            <div className="relative md:h-56 lg:h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 drop-shadow-md hover:drop-shadow-xl">
               <img
                 src={DarImg}
                 alt="tarteel"
