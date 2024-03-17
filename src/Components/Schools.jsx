@@ -9,7 +9,7 @@ import DarImg from "../Assets/Schools/darImg.png";
 const Schools = () => {
   return (
     <div
-      className="h-full min-h-screen w-full  py-24 p-4 [background:radial-gradient(125%_125%_at_50%_5%,#F0F9FF_40%,#0369A1_80%)]"
+      className="h-full min-h-screen w-full  py-12 p-4 [background:radial-gradient(125%_125%_at_50%_5%,#F0F9FF_40%,#0369A1_80%)]"
       id="school"
     >
       <div className="text-center mb-12">
