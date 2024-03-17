@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ahcReact/static/css/main.7c81ad00.css",
-    "main.js": "/ahcReact/static/js/main.f7dd7e35.js",
+    "main.css": "/ahcReact/static/css/main.73abe019.css",
+    "main.js": "/ahcReact/static/js/main.8598b9a7.js",
     "static/media/Counseling-Office-2-min.jpeg": "/ahcReact/static/media/Counseling-Office-2-min.3d401dae0a7c78424221.jpeg",
     "static/media/280-masjid-AHC-dark-2.png": "/ahcReact/static/media/280-masjid-AHC-dark-2.5718c231abdf8989dad5.png",
     "static/media/Flyers-1.64f0055b1b5b88.03871422-663x1024.png": "/ahcReact/static/media/Flyers-1.64f0055b1b5b88.03871422-663x1024.eb241278ce39ac9cc391.png",
@@ -29,11 +29,11 @@
     "static/media/WhatsApp-Image-2024-01-25-at-01.19.39-1-819x1024.jpeg": "/ahcReact/static/media/WhatsApp-Image-2024-01-25-at-01.19.39-1-819x1024.006a59bed7d7f293636d.jpeg",
     "static/media/WhatsApp-Image-2024-01-25-at-01.19.39-724x1024.jpeg": "/ahcReact/static/media/WhatsApp-Image-2024-01-25-at-01.19.39-724x1024.6d0f92e38997909c314e.jpeg",
     "index.html": "/ahcReact/index.html",
-    "main.7c81ad00.css.map": "/ahcReact/static/css/main.7c81ad00.css.map",
-    "main.f7dd7e35.js.map": "/ahcReact/static/js/main.f7dd7e35.js.map"
+    "main.73abe019.css.map": "/ahcReact/static/css/main.73abe019.css.map",
+    "main.8598b9a7.js.map": "/ahcReact/static/js/main.8598b9a7.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c81ad00.css",
-    "static/js/main.f7dd7e35.js"
+    "static/css/main.73abe019.css",
+    "static/js/main.8598b9a7.js"
   ]
 }
