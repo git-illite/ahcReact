@@ -77,7 +77,7 @@ export default function Navbar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ">
                 <div className="flex flex-shrink-0 items-center">
                   <img className="h-10 w-auto" src={Logo} alt="Your Company" />
-                  <span className="text-slate-50 ml-3 font-semibold md:hidden">
+                  <span className="text-slate-50 ml-3 font-semibold ">
                     <a href="#"> Abu Huraira Center</a>
                   </span>
                 </div>

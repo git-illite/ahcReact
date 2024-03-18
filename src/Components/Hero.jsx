@@ -1,36 +1,69 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import * as XLSX from "xlsx";
+import iqamaData from "../Assets/Services/iqamas";
 
 const Hero = () => {
-  const [prayerTimes, setPrayerTimes] = useState([]);
+  const [prayerTimes, setPrayerTimes] = useState({});
+  const [maghribTime, setMaghribTime] = useState("");
 
-  // useEffect(() => {
-  //   // Function to read file and parse data
-  //   const readExcelFile = (file) => {
-  //     const reader = new FileReader();
-  //     reader.onload = (e) => {
-  //       const data = e.target.result;
-  //       const workbook = XLSX.read(data, { type: "array" });
-  //       const worksheetName = workbook.SheetNames[0];
-  //       const worksheet = workbook.Sheets[worksheetName];
-  //       const jsonData = XLSX.utils.sheet_to_json(worksheet);
-  //       console.log(jsonData, " file found");
-  //       setPrayerTimes(jsonData);
-  //     };
-  //     reader.readAsArrayBuffer(file);
-  //   };
+  useEffect(() => {
+    // Function to fetch Maghrib time
+    const fetchMaghribTime = async () => {
+      try {
+        const response = await fetch(
+          "https://api.sunrise-sunset.org/json?lat=43.65322&lng=-79.3832&formatted=0"
+        );
+        const data = await response.json();
 
-  //   // Load the file from public folder or from an API
-  //   const file = "../Assets/iqamas.xlsx"; // Adjust the path to where your file is located
+        // Assuming 'sunset' is the key for Maghrib time in the API response
+        const maghribTimeUTC = new Date(data.results.sunset);
+        const formattedTime = maghribTimeUTC.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
+        });
 
-  //   fetch(file)
-  //     .then((res) => res.blob())
-  //     .then((blob) => {
-  //       readExcelFile(blob);
-  //     });
-  // }, []);
+        // Update state
+        setMaghribTime(formattedTime);
+      } catch (error) {
+        console.error("Error fetching Maghrib time:", error);
+      }
+    };
 
+    // Call the fetch function
+    fetchMaghribTime();
+  }, []); // Empty dependency array means this effect runs once on mount
+
+  useEffect(() => {
+    const today = new Date();
+    const formattedToday = today
+      .toLocaleDateString("en-US", {
+        month: "short",
+        day: "2-digit",
+        year: "numeric",
+      })
+      .replace(",", ""); // Format: "MMM DD YYYY"
+
+    // Find the most recent entry, including or prior to today, that has prayer times
+    const recentValidEntry = [...iqamaData].reverse().find((entry) => {
+      const entryDate = new Date(entry.date + " " + today.getFullYear());
+      return (
+        entryDate <= today &&
+        (entry.fajr || entry.zuhr || entry.asr || entry.isha)
+      );
+    });
+
+    if (recentValidEntry) {
+      setPrayerTimes({
+        date: recentValidEntry.date.toUpperCase(),
+        fajr: recentValidEntry.fajr.toUpperCase(),
+        zuhr: recentValidEntry.zuhr.toUpperCase(),
+        asr: recentValidEntry.asr.toUpperCase(),
+        isha: recentValidEntry.isha.toUpperCase(),
+      });
+    }
+    console.log(prayerTimes);
+  }, []);
   return (
     <div className="p-2 pb-12 bg-gradient-to-b from-gray-800 via-sky-800 to-sky-700">
       {/* <!-- Content at the top of the container --> */}
@@ -83,38 +116,46 @@ const Hero = () => {
               <p className="capitalize md:uppercase text-center md:text-5xl  text-sky-600 font-bold md:-translate-y-1/3">
                 &nbsp;&nbsp;Fajr&nbsp;&nbsp;
               </p>
-              <p className="text-center font-bold md:text-3xl">4:58 AM</p>
+              <p className="text-center font-bold md:text-3xl">
+                {prayerTimes.fajr}
+              </p>
             </div>
             <div className="bg-gradient-to-b from-slate-50 via-slate-00 to-sky-200 p-4 shadow-lg ">
               <p className="capitalize md:uppercase text-center md:text-5xl  text-sky-600 font-bold md:-translate-y-1/3">
                 Dhuhr
               </p>
-              <p className="text-center font-bold md:text-3xl">4:58 AM</p>
+              <p className="text-center font-bold md:text-3xl">
+                {prayerTimes.zuhr}
+              </p>
             </div>
             <div className="bg-gradient-to-b from-slate-50 via-slate-00 to-sky-200 p-4 shadow-lg ">
               <p className="capitalize md:uppercase text-center md:text-5xl  text-sky-600 font-bold md:-translate-y-1/3">
                 &nbsp;&nbsp;&nbsp;Asr&nbsp;&nbsp;&nbsp;
               </p>
-              <p className="text-center font-bold md:text-3xl">4:58 AM</p>
+              <p className="text-center font-bold md:text-3xl">
+                {prayerTimes.asr}
+              </p>
             </div>
             <div className="bg-gradient-to-b from-slate-50 via-slate-00 to-sky-200 p-4 shadow-lg">
               <p className="capitalize md:uppercase text-center md:text-5xl  text-sky-600 font-bold md:-translate-y-1/3">
                 Maghrib
               </p>
-              <p className="text-center font-bold md:text-3xl">4:58 AM</p>
+              <p className="text-center font-bold md:text-3xl">{maghribTime}</p>
             </div>
             <div className="bg-gradient-to-b from-slate-50 via-slate-00 to-sky-200 p-4 shadow-lg ">
               {" "}
               <p className="capitalize md:uppercase text-center md:text-5xl  text-sky-600 font-bold md:-translate-y-1/3">
                 &nbsp;&nbsp;&nbsp;Isha&nbsp;&nbsp;&nbsp;
               </p>
-              <p className="text-center font-bold md:text-3xl">4:58 AM</p>
+              <p className="text-center font-bold md:text-3xl">
+                {prayerTimes.isha}
+              </p>
             </div>
             <div className="bg-gradient-to-b from-slate-50 via-slate-00 to-sky-200 p-4 shadow-lg ">
               <p className="capitalize md:uppercase text-center md:text-5xl  text-sky-600 font-bold md:-translate-y-1/3">
                 Jum'uah
               </p>
-              <p className="text-center font-bold md:text-3xl">4:58 AM</p>
+              <p className="text-center font-bold md:text-3xl">01:30 PM</p>
             </div>
             {/* ... other cards */}
           </div>
